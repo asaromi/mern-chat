@@ -1,4 +1,4 @@
-const Chat = require('../models/Chat')
+const Chat = require('../models/chat')
 const { successResponse, errorResponse } = require('../helpers/response')
 
 const sendChat = async (req, res) => {
