@@ -27,7 +27,7 @@ function ChatroomDetail() {
 
   const { mutate: sendChat } = useSendChat({ message, onSent })
   const [displayedMessages, setDisplayedMessages] = useState([])
-  const [connected, setConnected] = useState(false)
+  const [_, setConnected] = useState(false)
 
   const handleMessageChange = (e) => {
     const {value} = e.target

@@ -4,7 +4,6 @@ import Home from '@/pages'
 import ChatroomDetail from '@/pages/chatrooms/_code'
 import '@/assets/styles/index.css'
 import {QueryClient, QueryClientProvider} from '@tanstack/react-query'
-import {useEffect} from 'react'
 
 const queryClient = new QueryClient({
   defaultOptions: {
