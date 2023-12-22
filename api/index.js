@@ -15,5 +15,5 @@ db.once('open', () => {
 })
 
 socketServer.listen(...listenParams, () =>
-  console.log(`Server Running at ${(host + ":") || ''}${port}`)
+  console.log(`Server Running at ${port}`)
 )
