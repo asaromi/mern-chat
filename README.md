@@ -9,9 +9,9 @@ and React (with Vite and support with DaisyUI) as the front end.
 - Create a database (with authentication if you need it)
 
 ### Setup Server
+- open the terminal and change directory to `api/` folder
 - copy .env.example to .env
 - fill all env variables
-- open the terminal and change directory to `api/` folder
 - execute `npm install` or `yarn install` to install all required npm packages
 - execute `npm start` or `yarn start` to run the server service
 - if success running the server service, you will see:
@@ -19,12 +19,12 @@ and React (with Vite and support with DaisyUI) as the front end.
 Server Running at 3000
 DB is ready. [timestamp]
 ```
-- you can access the server via `http://localhost:3000` (the port 3000 is based on your `.env`)
+- you can access the server via `http://localhost:3000` (the port 3000 and host with default localhost is based on your `.env`)
 
 ### Setup Client
+- open the terminal and change directory to `client/` folder
 - copy .env.example to .env
 - fill all env variables
-- open the terminal and change directory to `client/` folder
 - execute `npm install` or `yarn install` to install all required npm packages
 - execute `npm run dev` or `yarn dev` to run client service in development mode
 - if success running the client service, you will see :
