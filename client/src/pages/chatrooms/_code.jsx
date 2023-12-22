@@ -93,7 +93,7 @@ function ChatroomDetail() {
         <form className="px-4 flex space-x-2.5">
           <textarea
             className="textarea textarea-bordered textarea-xs text-base w-full h-11"
-            placeholder="Bio"
+            placeholder="Type a message..."
             value={message}
             onChange={handleMessageChange}
           />
