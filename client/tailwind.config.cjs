@@ -10,8 +10,12 @@ module.exports = {
       },
       height: {
         'half-screen': '50vh',
+        'screen-minus-136px': 'calc(100vh - 136px)',
         18: "4.5rem",
       },
+      zIndex: {
+        1000: 1000,
+      }
     },
     maxWidth: (theme) => ({
       ...theme('width'),
