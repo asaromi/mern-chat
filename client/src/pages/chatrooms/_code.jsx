@@ -43,11 +43,12 @@ function ChatroomDetail() {
   }
 
   const onReceiveMessage = (message) => {
-    setDisplayedMessages((prevState) => prevState.concat([message]))
+    setDisplayedMessages((prevState) => [ ...new Set([...prevState, message]) ])
   }
 
-  const onConnect = () => setConnected(() => true)
-  const onDisconnect = () => setConnected(() => false)
+  const onDisconnect = () => {
+    setConnected(() => false)
+  }
 
 
   const beforeDestroy = () => {
@@ -55,15 +56,12 @@ function ChatroomDetail() {
 
     setDisplayedMessages(() => [])
 
-    chatroomSocket.off('connect', onConnect)
     chatroomSocket.off(`RECEIVE_MESSAGE_${chatroomId}`, onReceiveMessage)
     chatroomSocket.disconnect()
   }
 
   useEffect(() => {
     chatroomSocket.connect()
-
-    chatroomSocket.on('connect', onConnect)
     chatroomSocket.on('disconnect', onDisconnect)
 
     return beforeDestroy
