@@ -1,7 +1,11 @@
 {
   "name": "mern-api",
   "version": "1.0.0",
-  "license": "MIT",
+  "description": "MERN API",
+  "scripts": {
+    "start": "node index.js --watch"
+  },
+  "license": "Apache-2.0",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
